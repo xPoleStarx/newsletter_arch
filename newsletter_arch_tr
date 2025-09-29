@@ -1,0 +1,72 @@
+flowchart TD
+    %% --- Stil Tanımlamaları ---
+    classDef userInput fill:#d4edda,stroke:#155724,stroke-width:1px
+    classDef agentProcess fill:#cce5ff,stroke:#004085,stroke-width:2px
+    classDef generatedArtifact fill:#fff3cd,stroke:#856404,stroke-width:1px
+    classDef finalProduct fill:#e2d4ed,stroke:#49127b,stroke-width:2px
+    
+    %% --- FAZ 1: Marka Temellerini Atma (Tek Seferlik Kurulum) ---
+    subgraph FAZ1["FAZ 1: Marka Temellerini Atma (Tek Seferlik Kurulum)"]
+        USER([Kullanıcı / Operatör])
+        
+        subgraph INPUT1["Kullanıcı Tarafından Sağlanan Başlangıç Materyalleri"]
+            IN1[/01_marka_bilgileri.txt/]
+            IN2[/02_hedef_kitle.txt/]
+            IN3[/03_is_hedefleri.txt/]
+            IN4[/04_kisilik_notlari.txt/]
+            IN5[/05_referans_metinler.txt/]
+        end
+        
+        A1["Agent 1: Newsletter:strategy<br/>Strateji Belgesi Oluşturur"]
+        OUT1[/strateji_belgesi.md/]
+        
+        A2["Agent 2: Newsletter:Tonality<br/>Kişilik ve Yazım Çerçevesi Oluşturur"]
+        OUT2[/kisilik_rehberi.md/]
+        OUT3[/yazim_cercevesi.md/]
+        
+        USER --> IN1 & IN2 & IN3
+        IN1 & IN2 & IN3 --> A1
+        A1 --> OUT1
+        USER --> IN4 & IN5
+        OUT1 --> A2
+        IN4 & IN5 --> A2
+        A2 --> OUT2 & OUT3
+    end
+    
+    %% --- FAZ 2: Her Newsletter Sayısını Üretme (Tekrarlanan Süreç) ---
+    subgraph FAZ2["FAZ 2: Her Newsletter Sayısını Üretme (Tekrarlanan Süreç)"]
+        USER_FAZ2([Kullanıcı / Operatör])
+        
+        subgraph INPUT2["Her Sayı İçin Kullanıcı Tarafından Sağlanan Materyaller"]
+            IN6[/yeni_sayi_konusu.txt/]
+            IN7[/yeni_sayi_ham_bilgi.txt/]
+            IN8[/extras isteğe bağlı/]
+        end
+        
+        A3["Agent 3: Newsletter:Idea<br/>Sayıya Özel Tez Geliştirir"]
+        OUT4[/sayi_tezi.md/]
+        
+        A4["Agent 4: Newsletter:Content Generation<br/>Nihai Newsletter Metnini Yazar"]
+        FINAL[[Nihai Newsletter Metni]]
+        
+        USER_FAZ2 --> IN6 & IN7 & IN8
+        IN6 & IN7 --> A3
+        A3 --> OUT4
+        OUT4 --> A4
+        IN8 --> A4
+        A4 --> FINAL
+    end
+    
+    %% --- Fazlar Arası Bağlantılar ---
+    OUT1 -.->|Stratejik Hizalama| A3
+    OUT1 -.->|Strateji Girdisi| A4
+    OUT2 -.->|Kişilik Girdisi| A4
+    OUT3 -.->|Yazım Çerçevesi| A4
+    IN5 -.->|Referans Metin| A4
+    
+    %% --- Sınıf Atamaları ---
+    class USER,USER_FAZ2 userInput
+    class IN1,IN2,IN3,IN4,IN5,IN6,IN7,IN8 userInput
+    class A1,A2,A3,A4 agentProcess
+    class OUT1,OUT2,OUT3,OUT4 generatedArtifact
+    class FINAL finalProduct
