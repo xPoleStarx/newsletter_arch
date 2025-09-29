@@ -6,11 +6,11 @@ flowchart TD
     classDef finalProduct fill:#e2d4ed,stroke:#49127b,stroke-width:2px
     
     %% --- PHASE 1: Establishing Brand Foundations (One-Time Setup) ---
-    subgraph FAZ1["PHASE 1: Establishing Brand Foundations (One-Time Setup)"]
+    subgraph PHASE1["PHASE 1: Establishing Brand Foundations (One-Time Setup)"]
         USER([User / Operator])
         
-        subgraph INPUT1["Initial Materials Provided by the User"]
-            IN1[/01_brand_info.txt/]
+        subgraph INPUT1["Initial Materials Provided by User"]
+            IN1[/01_brand_information.txt/]
             IN2[/02_target_audience.txt/]
             IN3[/03_business_goals.txt/]
             IN4[/04_personality_notes.txt/]
@@ -20,7 +20,7 @@ flowchart TD
         A1["Agent 1: Newsletter:strategy<br/>Creates Strategy Document"]
         OUT1[/strategy_document.md/]
         
-        A2["Agent 2: Newsletter:Tonality<br/>Creates Personality & Writing Framework"]
+        A2["Agent 2: Newsletter:Tonality<br/>Creates Personality and Writing Framework"]
         OUT2[/personality_guide.md/]
         OUT3[/writing_framework.md/]
         
@@ -33,14 +33,14 @@ flowchart TD
         A2 --> OUT2 & OUT3
     end
     
-    %% --- PHASE 2: Producing Each Newsletter Issue (Repeating Process) ---
-    subgraph FAZ2["PHASE 2: Producing Each Newsletter Issue (Repeating Process)"]
-        USER_FAZ2([User / Operator])
+    %% --- PHASE 2: Generating Each Newsletter Issue (Repeating Process) ---
+    subgraph PHASE2["PHASE 2: Generating Each Newsletter Issue (Repeating Process)"]
+        USER_PHASE2([User / Operator])
         
-        subgraph INPUT2["Materials Provided by the User for Each Issue"]
+        subgraph INPUT2["Materials Provided by User for Each Issue"]
             IN6[/new_issue_topic.txt/]
-            IN7[/new_issue_raw_info.txt/]
-            IN8[/extras (optional)/]
+            IN7[/new_issue_raw_information.txt/]
+            IN8[/extras optional/]
         end
         
         A3["Agent 3: Newsletter:Idea<br/>Develops Issue-Specific Thesis"]
@@ -49,7 +49,7 @@ flowchart TD
         A4["Agent 4: Newsletter:Content Generation<br/>Writes Final Newsletter Text"]
         FINAL[[Final Newsletter Text]]
         
-        USER_FAZ2 --> IN6 & IN7 & IN8
+        USER_PHASE2 --> IN6 & IN7 & IN8
         IN6 & IN7 --> A3
         A3 --> OUT4
         OUT4 --> A4
@@ -57,15 +57,15 @@ flowchart TD
         A4 --> FINAL
     end
     
-    %% --- Connections Between Phases ---
+    %% --- Inter-Phase Connections ---
     OUT1 -.->|Strategic Alignment| A3
     OUT1 -.->|Strategy Input| A4
     OUT2 -.->|Personality Input| A4
-    OUT3 -.->|Writing Framework Input| A4
+    OUT3 -.->|Writing Framework| A4
     IN5 -.->|Reference Text| A4
     
     %% --- Class Assignments ---
-    class USER,USER_FAZ2 userInput
+    class USER,USER_PHASE2 userInput
     class IN1,IN2,IN3,IN4,IN5,IN6,IN7,IN8 userInput
     class A1,A2,A3,A4 agentProcess
     class OUT1,OUT2,OUT3,OUT4 generatedArtifact
