@@ -1,0 +1,65 @@
+flowchart LR
+    %% --- Stil Tanımlamaları ---
+    classDef userInput fill:#d4edda,stroke:#155724,stroke-width:2px
+    classDef agentProcess fill:#cce5ff,stroke:#004085,stroke-width:2px
+    classDef generatedArtifact fill:#fff3cd,stroke:#856404,stroke-width:2px
+    classDef finalProduct fill:#e2d4ed,stroke:#49127b,stroke-width:3px
+    
+    %% --- FAZ 1: Marka Temelleri ---
+    USER1([👤 Kullanıcı<br/>Faz 1])
+    
+    IN1[📥 01_marka_bilgileri]
+    IN2[📥 02_hedef_kitle]
+    IN3[📥 03_is_hedefleri]
+    IN4[📥 04_kisilik_notlari]
+    IN5[📥 05_referans_metinler]
+    
+    A1["🤖 Ajan 1<br/>Haber Bülteni:Strateji"]
+    OUT1[📄 strateji_dokumani]
+    
+    A2["🤖 Ajan 2<br/>Haber Bülteni:Tonlama"]
+    OUT2[📄 kisilik_rehberi]
+    OUT3[📄 yazim_cercevesi]
+    
+    %% --- FAZ 2: Haber Bülteni Üretimi ---
+    USER2([👤 Kullanıcı<br/>Faz 2])
+    
+    IN6[📥 yeni_sayi_konusu]
+    IN7[📥 yeni_sayi_ham_bilgi]
+    IN8[📥 ekstralar_opsiyonel]
+    
+    A3["🤖 Ajan 3<br/>Haber Bülteni:Fikir"]
+    OUT4[📄 sayi_tezi]
+    
+    A4["🤖 Ajan 4<br/>Haber Bülteni:İçerik"]
+    FINAL[[✅ Nihai Haber Bülteni]]
+    
+    %% --- FAZ 1 Akışı ---
+    USER1 --> IN1 & IN2 & IN3 & IN4 & IN5
+    IN1 & IN2 & IN3 --> A1
+    A1 --> OUT1
+    OUT1 --> A2
+    IN4 & IN5 --> A2
+    A2 --> OUT2 & OUT3
+    
+    %% --- FAZ 2 Akışı ---
+    USER2 --> IN6 & IN7 & IN8
+    IN6 & IN7 --> A3
+    A3 --> OUT4
+    OUT4 --> A4
+    IN8 --> A4
+    A4 --> FINAL
+    
+    %% --- Faz Bağlantıları (Faz 1, Faz 2'yi besler) ---
+    OUT1 -.->|Strateji| A3
+    OUT1 -.->|Strateji| A4
+    OUT2 -.->|Kişilik| A4
+    OUT3 -.->|Çerçeve| A4
+    IN5 -.->|Referans| A4
+    
+    %% --- Stilleri Uygula ---
+    class USER1,USER2 userInput
+    class IN1,IN2,IN3,IN4,IN5,IN6,IN7,IN8 userInput
+    class A1,A2,A3,A4 agentProcess
+    class OUT1,OUT2,OUT3,OUT4 generatedArtifact
+    class FINAL finalProduct
