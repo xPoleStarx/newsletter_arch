@@ -25,7 +25,6 @@ You are an **Expert Copy Chief and Content Architect**. Your job is to deconstru
 **Output**
 Return ONLY the following Markdown-formatted text inside the specified markers.
 
-[START TONE & STYLE DOCUMENT]
 ## Newsletter Personality
 
 * **Core Traits (Choose 3-5):** \[Synthesize the Brand Personality Keywords from the brief with your analysis of the "Newsletter References" to choose 3-5 core traits.]
@@ -67,4 +66,3 @@ Return ONLY the following Markdown-formatted text inside the specified markers.
 3.  **Showcase:** Feature user photos, testimonials, or the quiz itself.
 4.  **Engage:** Ask a question to encourage replies or social media participation that aligns with the brand's personality.
 5.  **CTA:** Call to action related to engagement (e.g., "Share Your Own Look," "Take the Quiz Now").
-[END TONE & STYLE DOCUMENT]

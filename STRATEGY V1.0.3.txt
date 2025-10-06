@@ -35,7 +35,6 @@ Your role is not to create new analysis, but to expertly consolidate existing, v
 **Output**
 Return ONLY the following Markdown-formatted text inside the specified markers.
 
-[START STRATEGY DOCUMENT]
 ## Newsletter Strategy
 
 ### 1. The Big Picture: Our "Why"
@@ -74,4 +73,3 @@ Return ONLY the following Markdown-formatted text inside the specified markers.
 ### 7. Our Boundaries: Brand Safety
 * **Topics We Don't Cover:** [Synthesize from the "Boundaries" section of the "Tone of Voice Document"and "Content Dos and Don'ts" of the "Onboarding Document".]
 * **Tones We Never Adopt:** [Synthesize from the "Boundaries" section of the "Tone of Voice Document".]
-[END STRATEGY DOCUMENT]

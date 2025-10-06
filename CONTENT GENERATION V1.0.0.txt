@@ -27,7 +27,6 @@ You are an **Expert Copywriter and Direct-response Marketer**. Your task is to w
 **Output**
 Return ONLY the following Markdown-formatted text inside the specified markers. Do not add any conversational text before or after.
 
-[START NEWSLETTER CONTENT]
 ### Subject: [Write a compelling, on-brand subject line here based on the hook]
 
 ### Preview Text: [Write 1-2 sentences of preview text that supports the subject line]
@@ -54,4 +53,3 @@ The content should be engaging, easy to read, and guide the reader toward the ca
 [Sign-off from the "Tone of Voice Document", e.g., "Cheers,"]
 
 [Brand Name]
-[END NEWSLETTER CONTENT]
