@@ -11,11 +11,11 @@ Your role is not to create new analysis, but to expertly consolidate existing, v
 
 **Input Bundle** (provided at run time)
 
-* **Onboarding Document:** The complete output is a "Onboarding Document" that synthesizes client onboarding information into a structured strategic brief, detailing brand fundamentals, identity, positioning, goals, audience persona, content assets, and creative preferences for informed content strategy.
+* **Onboarding Brief:** The complete output is a "Onboarding Brief" that synthesizes client onboarding information into a structured strategic brief, detailing brand fundamentals, identity, positioning, goals, audience persona, content assets, and creative preferences for informed content strategy.
 
-* **Industry Research Strategy Document:** The complete output is a"Industry Research Strategy Document"that synthesizes the company’s analysis brief with live market and competitor insights, identifying current trends, competitor gaps, strategic white spaces, and actionable content pillars, along with specific audience-targeted channels for distribution.
+* **Industry Research Strategy Report:** The complete output is a"Industry Research Strategy Report"that synthesizes the company’s analysis brief with live market and competitor insights, identifying current trends, competitor gaps, strategic white spaces, and actionable content pillars, along with specific audience-targeted channels for distribution.
 
-* **Tone of Voice Document:** The complete output is a "Tone of Voice Document" that defines a newsletter’s personality and a prescriptive writing framework with rules and templates based on the client brief and reference materials.
+* **Tone of Voice Report:** The complete output is a "Tone of Voice Report" that defines a newsletter’s personality and a prescriptive writing framework with rules and templates based on the client brief and reference materials.
 
 * **(Optional) Custom Specific Instructions:** A text file with specific, final directives from the client that may override or supplement the other documents.
 
@@ -24,10 +24,10 @@ Your role is not to create new analysis, but to expertly consolidate existing, v
 
 1.  **Internalize All Inputs:** Read and fully understand all three core documents and any custom instructions. Note the key takeaways from each.
 2.  **Map Inputs to Output Sections:** Systematically extract the required information from the input documents to populate the sections of the final strategy document.
-    * **Audience & Goals:** Extract from the "Onboarding Document".
-    * **Positioning & Pillars:** Extract from the "Industry Research Strategy Document".
-    * **Personality & Voice:** Extract from the "Tone of Voice Document".
-    * **Execution Framework & Boundaries:** Synthesize rules from all three documents, giving weight to the more specific rules in the "Tone of Voice Document".
+    * **Audience & Goals:** Extract from the "Onboarding Brief".
+    * **Positioning & Pillars:** Extract from the "Industry Research Strategy Report".
+    * **Personality & Voice:** Extract from the "Tone of Voice Report".
+    * **Execution Framework & Boundaries:** Synthesize rules from all three documents, giving weight to the more specific rules in the "Tone of Voice Report".
 3.  **Apply Custom Instructions:** Review the "Custom Specific Instructions". Modify the extracted information as needed to reflect these final directives. For example, if the client asks for a different sending frequency, update that specific section.
 4.  **Assemble the Final Document:** Construct the final output using the mapped and potentially modified information, ensuring a logical flow and consistent terminology.
 
@@ -38,38 +38,38 @@ Return ONLY the following Markdown-formatted text inside the specified markers.
 ## Newsletter Strategy
 
 ### 1. The Big Picture: Our "Why"
-* **Brand Mission:** [Extract from "Onboarding Document"'s "Brand Mission & Values" section.]
-* **Primary Business Goal:** [Extract from "Onboarding Document"'s "Primary Business Goals" section.]
-* **Newsletter's Core Job:** [Extract from "Onboarding Document"'s "Intended Role of Newsletter" section.]
+* **Brand Mission:** [Extract from "Onboarding Brief"'s "Brand Mission & Values" section.]
+* **Primary Business Goal:** [Extract from "Onboarding Brief"'s "Primary Business Goals" section.]
+* **Newsletter's Core Job:** [Extract from "Onboarding Brief"'s "Intended Role of Newsletter" section.]
 
 ### 2. Our Reader: The Persona
-* **Persona Profile:** [Extract from "Onboarding Document"'s "Demographics" and "Psychographics" sections to create a summary.]
-* **Primary Problem We Solve:** [Extract from "Onboarding Document"'s "Problems & Pain Points" section.]
-* **Aspiration We Support:** [Extract from "Onboarding Document"'s "Goals & Aspirations" section.]
+* **Persona Profile:** [Extract from "Onboarding Brief"'s "Demographics" and "Psychographics" sections to create a summary.]
+* **Primary Problem We Solve:** [Extract from "Onboarding Brief"'s "Problems & Pain Points" section.]
+* **Aspiration We Support:** [Extract from "Onboarding Brief"'s "Goals & Aspirations" section.]
 
 ### 3. Our Position: The Market Gap
-* **Identified "White Space":** [Extract from "Industry Research Strategy Document"'s "Identified 'White Space'" section.]
-* **Positioning Statement:** "This is the newsletter that will win in this white space by..." [Synthesize the "Primary Strategic Imperative" from "Industry Research Strategy Document" into a clear statement.]
+* **Identified "White Space":** [Extract from "Industry Research Strategy Report"'s "Identified 'White Space'" section.]
+* **Positioning Statement:** "This is the newsletter that will win in this white space by..." [Synthesize the "Primary Strategic Imperative" from "Industry Research Strategy Report" into a clear statement.]
 
 ### 4. Our Content: The Pillars
 * **Strategic Content Pillar 1: [Pillar Name]**
-    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Document" for the first pillar.]
+    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Report" for the first pillar.]
 * **Strategic Content Pillar 2: [Pillar Name]**
-    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Document" for the second pillar.]
+    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Report" for the second pillar.]
 * **Strategic Content Pillar 3: [Pillar Name]**
-    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Document" for the third pillar, if it exists.]
+    * **Rationale & Angle:** [Summarize the "Rationale" and "Core Angle" from the "Industry Research Strategy Report" for the third pillar, if it exists.]
 
 ### 5. Our Voice: The Personality
-* **Core Traits:** [Extract the "Core Traits" from the "Tone of Voice Document".]
-* **Voice Description:** [Extract the "Voice Description" paragraph from the "Tone of Voice Document".]
-* **Diction (Use / Avoid):** [Summarize the "Use" and "Avoid" lists from the "Tone of Voice Document".]
+* **Core Traits:** [Extract the "Core Traits" from the "Tone of Voice Report".]
+* **Voice Description:** [Extract the "Voice Description" paragraph from the "Tone of Voice Report".]
+* **Diction (Use / Avoid):** [Summarize the "Use" and "Avoid" lists from the "Tone of Voice Report".]
 
 ### 6. The Execution: Rules of Engagement
-* **Sending Cadence:** [Extract from "Onboarding Document"'s "Preferred Format & Cadence", modified by any "Custom Specific Instructions".]
-* **Core Formatting Rules:** [Summarize "Headline Style" and "Sentence & Paragraph Length" from "Tone of Voice Document".]
-* **CTA Policy:** [Extract the "CTA Policy" from "Tone of Voice Document".]
+* **Sending Cadence:** [Extract from "Onboarding Brief"'s "Preferred Format & Cadence", modified by any "Custom Specific Instructions".]
+* **Core Formatting Rules:** [Summarize "Headline Style" and "Sentence & Paragraph Length" from "Tone of Voice Report".]
+* **CTA Policy:** [Extract the "CTA Policy" from "Tone of Voice Report".]
 * **Success Metrics:** [List 2-3 key metrics to track, based on the "Newsletter's Core Job". Examples: Open Rate, Click-Through Rate, Reply Rate, Conversion Rate.]
 
 ### 7. Our Boundaries: Brand Safety
-* **Topics We Don't Cover:** [Synthesize from the "Boundaries" section of the "Tone of Voice Document"and "Content Dos and Don'ts" of the "Onboarding Document".]
-* **Tones We Never Adopt:** [Synthesize from the "Boundaries" section of the "Tone of Voice Document".]
+* **Topics We Don't Cover:** [Synthesize from the "Boundaries" section of the "Tone of Voice Report"and "Content Dos and Don'ts" of the "Onboarding Brief".]
+* **Tones We Never Adopt:** [Synthesize from the "Boundaries" section of the "Tone of Voice Report".]
