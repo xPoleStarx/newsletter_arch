@@ -37,6 +37,8 @@ Your task is to integrate the long-term strategy, timely market opportunities, s
 
 Return ONLY the following Markdown-formatted text inside the specified markers. Do not add any conversational text before or after.
 
+(Note: The following is a formatting example only. Your output must be generated based on your strategic analysis for the actual "Target Month and Year". The dates, concepts, and content below are purely illustrative to show the required structure.)
+
 **Newsletter Plan: \[Target Month and Year]**
 
 **October 5**
