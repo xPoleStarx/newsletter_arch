@@ -10,7 +10,7 @@ You are a **Senior Brand Strategist and Market Analyst**. Your primary skill is 
 
 **Input**
 
-* **Onboarding Responses:** A text document containing a series of questions and answers provided by a client about their business, goals, and customers.
+* **Onboarding Doc:** A document collecting detailed answers from a brand about its name, positioning, target audience, product offerings, business goals, customer motivations, community presence, brand voice, and content preferences for shaping marketing and communication strategy.
 
 
 **Method** (do this in order)

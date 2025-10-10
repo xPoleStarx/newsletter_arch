@@ -12,11 +12,11 @@ Your role is not to create new analysis, but to expertly consolidate existing, v
 
 **Input Bundle** (provided at run time)
 
-* **Onboarding Brief:** The complete output is a "Onboarding Brief" that synthesizes client onboarding information into a structured strategic brief, detailing brand fundamentals, identity, positioning, goals, audience persona, content assets, and creative preferences for informed content strategy.
+* **Company Overview Summary:** A document detailing a company’s brand identity, mission, core products, business model, target audience, market positioning, strategic goals, content assets, and preferred communication style for marketing, customer engagement, and newsletter strategy.
 
-* **Industry Research Strategy Report:** The complete output is a"Industry Research Strategy Report"that synthesizes the company’s analysis brief with live market and competitor insights, identifying current trends, competitor gaps, strategic white spaces, and actionable content pillars, along with specific audience-targeted channels for distribution.
+* **Industry Research Strategy Report:** A document analyzing current market trends, competitor strategies, customer behavior, and strategic opportunities for a fashion and lifestyle marketplace, providing insights to guide content planning, brand positioning, and growth initiatives.
 
-* **Tone of Voice Report:** The complete output is a "Tone of Voice Report" that defines a newsletter’s personality and a prescriptive writing framework with rules and templates based on the client brief and reference materials.
+* **Tone of Voice Report:** A guide defining the personality, language, and stylistic approach for newsletters, detailing how to communicate consistently with the audience through word choice, tone, content blocks, and interactive elements to engage, inform, and inspire readers.
 
 * **(Optional) Custom Specific Instructions:** A text file with specific, final directives from the client that may override or supplement the other documents.
 
@@ -26,7 +26,7 @@ Your role is not to create new analysis, but to expertly consolidate existing, v
 1.  **Internalize All Inputs:** Read and fully understand all three core documents and any custom instructions. Note the key takeaways from each.
 
 2.  **Map Inputs to Output Sections:** Systematically extract the required information from the input documents to populate the sections of the final strategy document.
-    * **Audience & Goals:** Extract from the "Onboarding Brief".
+    * **Audience & Goals:** Extract from the "Company Overview Summary".
     * **Positioning & Pillars:** Extract from the "Industry Research Strategy Report".
     * **Personality & Voice:** Extract from the "Tone of Voice Report".
     * **Execution Framework & Boundaries:** Synthesize rules from all three documents, giving weight to the more specific rules in the "Tone of Voice Report".
@@ -43,15 +43,15 @@ Return ONLY the following Markdown-formatted text inside the specified markers.
 
 ### 1. The Big Picture: Our "Why"
 
-* **Brand Mission:** \[Extract from "Onboarding Brief"'s "Brand Mission & Values" section.]
-* **Primary Business Goal:** \[Extract from "Onboarding Brief"'s "Primary Business Goals" section.]
-* **Newsletter's Core Job:** \[Extract from "Onboarding Brief"'s "Intended Role of Newsletter" section.]
+* **Brand Mission:** \[Extract from "Company Overview Summary"'s "Brand Mission & Values" section.]
+* **Primary Business Goal:** \[Extract from "Company Overview Summary"'s "Primary Business Goals" section.]
+* **Newsletter's Core Job:** \[Extract from "Company Overview Summary"'s "Intended Role of Newsletter" section.]
 
 ### 2. Our Reader: The Persona
 
-* **Persona Profile:** \[Extract from "Onboarding Brief"'s "Demographics" and "Psychographics" sections to create a summary.]
-* **Primary Problem We Solve:** \[Extract from "Onboarding Brief"'s "Problems & Pain Points" section.]
-* **Aspiration We Support:** \[Extract from "Onboarding Brief"'s "Goals & Aspirations" section.]
+* **Persona Profile:** \[Extract from "Company Overview Summary"'s "Demographics" and "Psychographics" sections to create a summary.]
+* **Primary Problem We Solve:** \[Extract from "Company Overview Summary"'s "Problems & Pain Points" section.]
+* **Aspiration We Support:** \[Extract from "Company Overview Summary"'s "Goals & Aspirations" section.]
 
 ### 3. Our Position: The Market Gap
 
@@ -75,12 +75,12 @@ Return ONLY the following Markdown-formatted text inside the specified markers.
 
 ### 6. The Execution: Rules of Engagement
 
-* **Sending Cadence:** \[Extract from "Onboarding Brief"'s "Preferred Format & Cadence", modified by any "Custom Specific Instructions". **IF** the value is "Flexible / To be determined by strategy", then state the following: "Flexible Cadence. The exact number and timing of newsletters will be determined monthly by the Campaign Director based on strategic opportunities. The recommended baseline is 6-10 emails per month to maintain audience engagement without causing fatigue. This can be adjusted based on high-value opportunities from the Monthly Opportunities Report."]
+* **Sending Cadence:** \[Extract from "Company Overview Summary"'s "Preferred Format & Cadence", modified by any "Custom Specific Instructions". **IF** the value is "Flexible / To be determined by strategy", then state the following: "Flexible Cadence. The exact number and timing of newsletters will be determined monthly by the Campaign Director based on strategic opportunities. The recommended baseline is 6-10 emails per month to maintain audience engagement without causing fatigue. This can be adjusted based on high-value opportunities from the Monthly Opportunities Report."]
 * **Core Formatting Rules:** \[Summarize "Headline Style" and "Sentence & Paragraph Length" from "Tone of Voice Report".]
 * **CTA Policy:** \[Extract the "CTA Policy" from "Tone of Voice Report".]
 * **Success Metrics:** \[List 2-3 key metrics to track, based on the "Newsletter's Core Job". Examples: Open Rate, Click-Through Rate, Reply Rate, Conversion Rate.]
 
 ### 7. Our Boundaries: Brand Safety
 
-* **Topics We Don't Cover:** \[Synthesize from the "Boundaries" section of the "Tone of Voice Report"and "Content Dos and Don'ts" of the "Onboarding Brief".]
+* **Topics We Don't Cover:** \[Synthesize from the "Boundaries" section of the "Tone of Voice Report"and "Content Dos and Don'ts" of the "Company Overview Summary".]
 * **Tones We Never Adopt:** \[Synthesize from the "Boundaries" section of the "Tone of Voice Report".]

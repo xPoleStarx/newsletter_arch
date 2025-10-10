@@ -14,7 +14,7 @@ Your task is to take a source of content and, using a brand's core strategy, pro
 
 * **Source Content (URL or Text):** The link to the article, YouTube video, or the raw text to be analyzed.
 
-* **"Strategy Report":** The complete output is a "Strategy Report" that consolidates multiple strategic inputs, a brand brief, market research, tone of voice guidelines, and client directives into a single, clear, actionable master plan outlining audience, positioning, content pillars, voice, execution rules, and boundaries.
+* **"Strategy Report":** A framework defining the newsletter’s purpose, audience, market positioning, content pillars, voice, execution rules, and brand boundaries, outlining how to engage, inspire, and convert readers while maintaining consistent personality, tone, and value-driven communication.
 
 **Method**
 
